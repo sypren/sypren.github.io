@@ -8,20 +8,20 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>微信公众号接入指南 | Fun0313的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="开发环境准备1、一个微信公众号2、外网映射工具（开发调试）可参考:Windows下基于ngrok、localtunnel内网穿透实践 JAVA后台接入指南项目目录结构项目创建目录结构如下图所示：   WechatServlet.java类编写123456789101112131415161718192021222324252627package com.fun0313.servlet;import">
+  <meta name="description" content="开发环境准备1、一个微信公众号2、外网映射工具（开发调试）可参考:Windows下基于ngrok、localtunnel内网穿透实践 JAVA后台接入指南项目目录结构项目创建目录结构如下图所示：">
 <meta name="keywords" content="java,微信,wechat">
 <meta property="og:type" content="article">
 <meta property="og:title" content="微信公众号接入指南">
 <meta property="og:url" content="http://yoursite.com/2017/08/05/微信公众号接入指南/index.html">
 <meta property="og:site_name" content="Fun0313的博客">
-<meta property="og:description" content="开发环境准备1、一个微信公众号2、外网映射工具（开发调试）可参考:Windows下基于ngrok、localtunnel内网穿透实践 JAVA后台接入指南项目目录结构项目创建目录结构如下图所示：   WechatServlet.java类编写123456789101112131415161718192021222324252627package com.fun0313.servlet;import">
+<meta property="og:description" content="开发环境准备1、一个微信公众号2、外网映射工具（开发调试）可参考:Windows下基于ngrok、localtunnel内网穿透实践 JAVA后台接入指南项目目录结构项目创建目录结构如下图所示：">
 <meta property="og:image" content="http://yoursite.com/2017/08/05/微信公众号接入指南/WechatProjectInit.png">
 <meta property="og:image" content="http://yoursite.com/2017/08/05/微信公众号接入指南/localtunnel.png">
 <meta property="og:image" content="http://yoursite.com/2017/08/05/微信公众号接入指南/server.png">
-<meta property="og:updated_time" content="2017-08-05T13:59:56.097Z">
+<meta property="og:updated_time" content="2017-08-05T14:21:33.279Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微信公众号接入指南">
-<meta name="twitter:description" content="开发环境准备1、一个微信公众号2、外网映射工具（开发调试）可参考:Windows下基于ngrok、localtunnel内网穿透实践 JAVA后台接入指南项目目录结构项目创建目录结构如下图所示：   WechatServlet.java类编写123456789101112131415161718192021222324252627package com.fun0313.servlet;import">
+<meta name="twitter:description" content="开发环境准备1、一个微信公众号2、外网映射工具（开发调试）可参考:Windows下基于ngrok、localtunnel内网穿透实践 JAVA后台接入指南项目目录结构项目创建目录结构如下图所示：">
 <meta name="twitter:image" content="http://yoursite.com/2017/08/05/微信公众号接入指南/WechatProjectInit.png">
   
     <link rel="alternative" href="/atom.xml" title="Fun0313的博客" type="application/atom+xml">
@@ -187,7 +187,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="开发环境准备"><a href="#开发环境准备" class="headerlink" title="开发环境准备"></a>开发环境准备</h2><p>1、一个微信公众号<br>2、外网映射工具（开发调试）可参考:<a href="/2017/08/05/Windows下基于ngrok、localtunnel内网穿透实践/" title="Windows下基于ngrok、localtunnel内网穿透实践">Windows下基于ngrok、localtunnel内网穿透实践</a></p>
-<h2 id="JAVA后台接入指南"><a href="#JAVA后台接入指南" class="headerlink" title="JAVA后台接入指南"></a>JAVA后台接入指南</h2><h3 id="项目目录结构"><a href="#项目目录结构" class="headerlink" title="项目目录结构"></a>项目目录结构</h3><p>项目创建目录结构如下图所示：</p>
+<h2 id="JAVA后台接入指南"><a href="#JAVA后台接入指南" class="headerlink" title="JAVA后台接入指南"></a>JAVA后台接入指南</h2><h3 id="项目目录结构"><a href="#项目目录结构" class="headerlink" title="项目目录结构"></a>项目目录结构</h3><p>项目创建目录结构如下图所示：<br><a id="more"></a></p>
 <center><br><img src="/2017/08/05/微信公众号接入指南/WechatProjectInit.png" alt="项目资源管理器" title="项目资源管理器"><br></center>
 
 <h3 id="WechatServlet-java类编写"><a href="#WechatServlet-java类编写" class="headerlink" title="WechatServlet.java类编写"></a>WechatServlet.java类编写</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">package com.fun0313.servlet;</div><div class="line"></div><div class="line">import java.io.IOException;</div><div class="line">import java.io.PrintWriter;</div><div class="line"></div><div class="line">import javax.servlet.ServletException;</div><div class="line">import javax.servlet.http.HttpServlet;</div><div class="line">import javax.servlet.http.HttpServletRequest;</div><div class="line">import javax.servlet.http.HttpServletResponse;</div><div class="line"></div><div class="line">import com.fun0313.util.CheckUtil;</div><div class="line"></div><div class="line">public class WechatServlet extends HttpServlet&#123;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException &#123;</div><div class="line">        String signature = req.getParameter(<span class="string">"signature"</span>);</div><div class="line">        String timestamp = req.getParameter(<span class="string">"timestamp"</span>);</div><div class="line">        String nonce = req.getParameter(<span class="string">"nonce"</span>);</div><div class="line">        String echostr = req.getParameter(<span class="string">"echostr"</span>);</div><div class="line">        </div><div class="line">        PrintWriter out = resp.getWriter();</div><div class="line">        <span class="keyword">if</span>(CheckUtil.checkSignature(signature, timestamp, nonce))&#123;</div><div class="line">            out.print(echostr);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
